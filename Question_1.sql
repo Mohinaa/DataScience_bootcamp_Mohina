@@ -20,4 +20,11 @@ Order by 2 desc
 
 --California
 
+Select metro_city
+sum(population_age_70_74+population_age_75_79)/sum population)::numeric as proportion_70_to_79
+From public.census_metro_data cmd
+Group by 1
+Order by 2 desc
+
+
 
